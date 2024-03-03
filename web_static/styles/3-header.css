@@ -1,0 +1,13 @@
+header {
+    background-color: #FFFFFF;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    /* You will need to add background-image with the path to your logo in the images folder */
+    background-image: url('../images/logo.png'); /* Make sure to add logo.png in your images folder */
+    background-repeat: no-repeat;
+    background-position: left center;
+}
