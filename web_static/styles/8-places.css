@@ -1,7 +1,10 @@
+.places {
+    /* Add styles for places section */
+}
+
 .places h1 {
     font-size: 30px;
-    margin: 20px 0;
-    padding-left: 20px;
+    margin-left: 20px; /* align in the top left */
 }
 
 .places article {
@@ -11,6 +14,7 @@
     border: 1px solid #FF5A5F;
     border-radius: 4px;
     text-align: center; /* Center the content */
+    position: relative; /* For absolute positioning of price tag */
 }
 
 .places h2 {
@@ -19,37 +23,44 @@
 
 .price_by_night {
     color: #FF5A5F;
+    background-color: #FFFFFF;
     border: 4px solid #FF5A5F;
-    border-radius: 50%; /* To make it round */
+    border-radius: 50%; /* Rounded border */
     width: 60px;
     height: 60px;
     font-size: 30px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -10px; /* Adjust as per the design */
+    right: -10px; /* Adjust as per the design */
 }
 
 .information {
-    border-top: 1px solid #DDDDDD;
-    border-bottom: 1px solid #DDDDDD;
-    height: 80px;
     display: flex;
     justify-content: space-around;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 10px 0;
+}
+
+.information > div {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .max_guest, .number_rooms, .number_bathrooms {
     width: 100px;
-    text-align: center;
 }
 
 .user {
     font-weight: bold;
+    padding: 5px 0;
 }
 
 .description {
-    /* If you want to add specific styles to the description */
+    text-align: justify;
 }
